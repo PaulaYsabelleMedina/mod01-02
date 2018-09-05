@@ -6,9 +6,10 @@
 </head>
 <body>
 	<form action="" method="">
-		<label>Username:</label><input type= "text" name= "username"> 
+		<label for="username">Username:</label><input type= "text" name= "username" required="true" id="username"> 
 		<label>Password:</label><input type= "password" name= "password">
 		<br>
+
 		<!-- RB -->
 		<label>Meal:</label>
 		<input type= "radio" name= "gender" value= "breakfast">
@@ -18,22 +19,49 @@
 		</label><input type= "radio" name= "gender" value= "dinner">
 		dinner
 		<br>
+
 		<!-- CB -->
-		<label>Foods</label>
+		<label for="foods">Foods</label>
 		<input type="checkbox" name="foods" value="oats">
 		oats
-		<input type="checkbox" name="foods" value="chia">
+		<input type="checkbox" name="foods" value="chia" checked>
 		chia
 		<input type="checkbox" name="foods" value="flax">
 		flax
 		<br>
+<fieldset>
+<legend>Contact details</legend>
 		<!-- Email -->
-		<label>Email:</label>
-		<input type="email" name="email">
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email">
 		<br>
+		<label for="mobile">Mobile:</label>
+		<input type="email" name="mobile" id="mobile">
+		<br>
+</fieldset>
 		<!-- number -->
-		<label>Age:</label>
-		<input type="number" name="age">
+		<label for="age">Age:</label>
+		<input type="number" name="age" id="age" min="1">
+		<br>
+
+		<!-- text area -->
+		<textarea name="comment"></textarea>
+		<br>
+
+		<!-- drop down list -->
+		<select name="plants">
+		<option value="kale">Kale</option>
+		<option value="carrots">carrots</option>
+		<option value="cake" selected>cake</option>
+		</select>
+		<br>
+
+		<!-- file -->
+		<input type="file" name="pic">
+		<br>
+		<!-- button -->
+		<input type="submit" value="Submit">
+
 	</form>
 </body>
 </html>
